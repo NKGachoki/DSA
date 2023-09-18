@@ -74,6 +74,4 @@ def MergeList(a, first, middle, last):
 
     
 
-l = [12, 34, 11, 67, 45, 89, 15, 28, 10, 5, 100, 12, 16, 1, 32, 99, 74]
-MergeSort(l)
-print(l)
+

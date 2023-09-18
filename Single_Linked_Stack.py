@@ -22,7 +22,7 @@ class Stack:
     def pop(self):
         try:
             if self.head is None:
-                print("Error @ method: pop()! Stack is already empty.")
+                print("Error at method: pop()! Stack is already empty.")
             else:
                 temp = self.head
                 self.head = temp.next
@@ -50,7 +50,7 @@ class Stack:
     def display(self):
         try:
             if self.head is None:
-                print("Error @ method: display()! Stack is already empty.")
+                print("Error at method: display()! Stack is already empty.")
             else:
                 temp = self.head
                 while temp is not None:
@@ -63,7 +63,7 @@ class Stack:
     def pop_stack(self):
         try:
             if self.head is None:
-                print("Error @ method: pop_stack()! Stack is already empty.")
+                print("Error at method: pop_stack()! Stack is already empty.")
             else:
                 temp = self.head
                 temp.next = None
@@ -71,28 +71,3 @@ class Stack:
         except Exception as e:
             print(e)
 
-# Example of applying the above code to push and pop data into a single linked stack.
-
-stack = Stack()
-
-print("After pushing data to stack...")
-stack.push(10)
-stack.push(20)
-stack.push(30)
-stack.push(40)
-stack.push(50)
-stack.display()
-stack.node_count()
-
-print("\nAfter popping some data from the stack...")
-stack.pop()
-stack.pop()
-stack.display()
-stack.node_count()
-
-print("\nAfter popping all the data from the stack...")
-stack.pop_stack()
-stack.node_count()
-
-
-       
